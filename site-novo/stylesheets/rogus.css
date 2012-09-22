@@ -1,12 +1,16 @@
+/* palette scheme: http://colorschemedesigner.com/#0032dllpBw0w0 */
+
 body {
 	font-family: Helvetica, Tahoma, sans-serif;
-	color: #333344;
-	font-size: 100%; // 100% = 16px
-	text-shadow: 0.1em 0.1em 0.1em #dde;
+	color: #113157; /* #333344; */
+	font-size: 100%; /* 100% = 16px */
+	width: 1140px;
+	margin: 0 auto;
+	text-shadow: 0.1em 0.1em 0.1em #ddf;
 }
 
 h2 {
-	color: #33a;
+	color: #851616;
 	margin-bottom: 0;
 }
 
@@ -24,13 +28,17 @@ th, td {
 	border-bottom: #ccd 1px dotted;
 }
 
-th.small, td.small {
+th.small, tr.item td.small {
 	width: 8em;
 }
 
-div.price {
+div.price, div.total {
 	font-size: 1em;
-	color: #c44;
+	color: #cc4444;
+}
+
+div.total {
+	font-size: 1.25em;
 }
 
 tr.item {
@@ -41,23 +49,27 @@ tr.item {
 
 a.product-link {
 	text-decoration: none;
-	color: #77f;
+	color: #345986;
 	font-size: 1.25em;
 }
 
 a.author-link {
 	text-decoration: none;
-	color: #445;	
+	color: #113157;	
 }
 
 img.cover {
-	height: 7.5em;  // 120/16 = 7.5
+	height: 7.5em;  /* 120/16 = 7.5 */
 }
 
 td.image {
-	width: 8.125em; //130/16 = 8.125;
+	width: 8.125em; /* 130/16 = 8.125; */
 }
 
 .in-stock {
-	color: #5a5;
+	color: #768216;
+}
+
+tr.footer {
+	text-align: right;
 }
