@@ -1,13 +1,29 @@
 /* palette scheme: http://colorschemedesigner.com/#0032dllpBw0w0 */
+@font-face {
+	font-family: JudasPriest;
+	src: url('fonts/JudasPriest.ttf');
+}
 
 body {
 	font-family: Helvetica, Tahoma, sans-serif;
 	color: #113157; /* #333344; */
 	font-size: 100%; /* 100% = 16px */
-	width: 1140px;
-	margin: 0 auto;
 	text-shadow: 0.1em 0.1em 0.1em #ddf;
 	line-height: 1.5em;
+}
+
+#header-container {
+	width: 100%;
+}
+
+#header, #content {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+#header {
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 h2 {
@@ -77,4 +93,10 @@ td.image {
 
 tr.footer {
 	text-align: right;
+}
+
+.logo {
+	font-family: JudasPriest;
+	font-size: 3em;
+	color: #113157;
 }
