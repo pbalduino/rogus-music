@@ -5,6 +5,11 @@ body {
 	text-shadow: 0.1em 0.1em 0.1em #dde;
 }
 
+h2 {
+	color: #33a;
+	margin-bottom: 0;
+}
+
 table#cart {
 	width: 100%;
 }
