@@ -1,7 +1,7 @@
 /* palette scheme: http://colorschemedesigner.com/#0032dllpBw0w0 */
 @font-face {
 	font-family: JudasPriest;
-	src: url('fonts/JudasPriest.ttf');
+	src: url('../fonts/JudasPriest.ttf');
 }
 
 body {
@@ -49,12 +49,12 @@ th.small, tr.item td.small {
 	width: 8em;
 }
 
-div.price, div.total {
+div.price, #total {
 	font-size: 1em;
 	color: #cc4444;
 }
 
-div.total {
+#total {
 	font-size: 1.25em;
 }
 
