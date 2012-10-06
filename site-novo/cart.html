@@ -6,6 +6,7 @@
 
 	<title>rogus - carrinho de compras</title>
 	<link type='text/css' href='stylesheets/rogus.css' rel='stylesheet'>
+	<script src='javascripts/rogus.js' type='text/javascript'></script>
 </head>
 <body>
 	<div id="header-container">
@@ -94,28 +95,5 @@
 	</table>
 </div>
 </body>
-<script type="text/javascript">
-	function moneyTextToFloat(text) {
-		var cleanText = text.replace("R$ ", "").replace(",", ".");
-		return parseFloat(cleanText);
-	}
-
-	function floatToMoneyText(value){
-		var text = (value < 1 ? "0" : "") + Math.floor(value * 100);
-		text = "R$ " + text;
-		return text.substr(0, text.length - 2) + "," + text.substr(-2);
-	}
-
-	function writeTotal(value) {
-		var total = document.getElementById("total");
-		total.innerHTML = floatToMoneyText(value);
-	}
-
-	var total = document.getElementById("total");
-	
-	alert(moneyTextToFloat(total.innerHTML));
-
-	writeTotal(3.14159);
-
 </script>
 </html>
