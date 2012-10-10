@@ -18,3 +18,26 @@ function writeTotal(value) {
 	var total = document.getElementById("total");
 	total.innerHTML = floatToMoneyText(value);
 }
+
+function calculateTotalItems() {
+	var items = document.getElementsByClassName("item");
+
+	var totalProducts = 0;
+
+	for(var pos = 0; pos < items.length; pos++) {
+		var priceElements = items[pos].getElementsByClassName("price")
+		var priceText = priceElements[0].innerHTML;
+		var price = moneyTextToFloat(priceText);
+
+		var qtyElements = items[pos].getElementsByClassName("quantity")
+		var qtyText = qtyElements[0].value;
+		var quantity = moneyTextToFloat(qtyText);
+
+		var totalItem = quantity * price;
+
+		totalProducts += totalItem;
+
+	}
+
+	return totalProducts;
+}
